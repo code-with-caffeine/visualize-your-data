@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <link href="style.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    </head>
+    <body>
+        <div class="back">
+            <div>
+            <h1>Velvet</h1>
+            <div class="drawer">
+                <div class="menu">
+                    <div class="button_cont" id="home_button">
+                        <div class="icon">
+                            <img src="assets/home.png" height="8%">
+                        </div>
+                        Home
+                    </div>
+                    <div class="button_cont" id="create">
+                        <div class="icon">
+                            <img src="assets/create.png" height="8%">
+                        </div>
+                        Create
+                    </div>
+                    <div class="button_cont" id="help_button">
+                        <div class="icon">
+                            <img src="assets/help.png" height="8%">
+                        </div>
+                        Help
+                    </div>
+                    <div class="button_cont">
+                        <div class="icon">
+                            <img src="assets/account.png" height="8%">
+                        </div>
+                        Tim
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="home" id="home">
+                <h2>Velvet is a program that helps users to create and save charts according to their requirements.<br>
+                <br>
+                This program has been created by team Glossy for Tech with Tim code jam.
+                <br>
+                <br>
+                This platform is quite user-friendly and easy to.<br><br>
+                Help for using this program is available in the 'Help' section<br><br>
+                Hope you have Good time using Velvet    :D</h2>
+                
+            </div>
+            <div class="create_menu" id="create_menu">
+                <div id="entry_handler">
+                    <input type="number" class="inp_bar" id="entry_num" placeholder="Number of Entries">
+                    <input type="text" class="next" id="dataset_name" placeholder="Name of Dataset">
+                    <div class="next" id="next">Next</div>
+                    
+                </div>
+                <div id="entry_menu">
+                    <div id="entries" class="entries">
+                    </div>
+                    <select class="selection" id="chrt_type"><option>line
+                        <option>bar
+                        <option>pie
+                        <option>doughnut
+                    </select>
+                    <button class="next" id="create_chrt">Create</button><br><br>
+                    
+                    <button class="next" id="back">Back</button>
+
+                </div>
+                <div class="main" id="main">
+                    <canvas id="canvas"></canvas><br>
+                    <div class="main_bttn" id="main_back">Back</div>
+                    <div class="main_bttn" id="save_chrt">Save Chart</div>
+                </div>
+            </div>
+            <div id="help" class="create_menu"><iframe src="https://www.youtube.com/embed/aKCgLI0WprQ" height="141%" width="100%"></iframe></div>
+        </div>
+
+        <div class="cursor"></div>
+    </body>
+    <script src="script.js"></script>
+</html>
